@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Готель "Cosiness"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ласкаво просимо до готелю "Затишок"</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#rooms">Номери</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Про наш готель</h2>
+        <p>Готель "Затишок" – це місце для відпочинку та спокою. Ми пропонуємо комфортні номери та першокласні послуги.</p>
+    </section>
+
+    <section id="rooms">
+        <h2>Наші номери</h2>
+        <div class="room" id="room1">
+            <img src="My_project\lux.jpg">
+            <h3>Люкс</h3>
+            <p>Просторий номер з видом на море.</p>
+            <button onclick="showDetails('room1')">Детальніше</button>
+        </div>
+        <div class="room" id="room2">
+            <h3>Стандарт</h3>
+            <p>Затишний номер для двох.</p>
+            <button onclick="showDetails('room2')">Детальніше</button>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Наші послуги</h2>
+        <ul>
+            <li>Безкоштовний Wi-Fi</li>
+            <li>Басейн</li>
+            <li>Спа-процедури</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Телефон: +380 123 456 789</p>
+        <p>Email: info@hotelzatysok.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Готель "Cosiness". Всі права захищено.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

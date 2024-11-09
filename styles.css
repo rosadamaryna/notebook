@@ -1,0 +1,109 @@
+/* Базові стилі */
+body {
+    font-family: serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #333;
+}
+
+/* Заголовок */
+header {
+    background-image: url("My_project\header.jpg");
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Навігація */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Розділи */
+section {
+    padding: 3rem;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Стилі для кімнат */
+.room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: transform 0.3s;
+}
+
+.room:hover {
+    transform: translateY(-5px);
+}
+
+.room h3 {
+    margin: 0;
+}
+
+button {
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8f94fb;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+/* Анімація кнопок */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4e54c8;
+}
