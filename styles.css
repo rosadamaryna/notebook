@@ -1,6 +1,6 @@
-/* Базові стилі */
+/* Загальні стилі */
 body {
-    font-family: serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 
 /* Заголовок */
 header {
-    background-image: url("My_project\header.jpg");
+    background: linear-gradient(90deg, #9f435b, #892d28);
     color: #fff;
     text-align: center;
     padding: 2rem;
@@ -81,7 +81,7 @@ section h2 {
 }
 
 button {
-    background-color: #4e54c8;
+    background-color: #c84e62;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -90,7 +90,7 @@ button {
 }
 
 button:hover {
-    background-color: #8f94fb;
+    background-color: #941721;
 }
 
 /* Футер */
@@ -105,5 +105,47 @@ footer {
 /* Анімація кнопок */
 button:focus {
     outline: none;
-    box-shadow: 0 0 5px #4e54c8;
+    box-shadow: 0 0 5px #c84e66;
+}
+
+/* Адаптивні стилі */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .room {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .room button {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .room h3 {
+        font-size: 1.2rem;
+    }
 }
